@@ -25,7 +25,7 @@ For `.rar` archives, install WinRAR. If WinRAR/RAR is not found, the helper scri
 Open PowerShell and run:
 
 ```powershell
-cd "C:\Users\Adlee Afif\Documents\Codex\2026-06-23\cr\outputs"
+cd "C:\Users\{username}\Documents\Codex\2026-06-23\cr\outputs"
 
 powershell -ExecutionPolicy Bypass -File .\run_playlist_audio_and_archive.ps1 -PlaylistUrl "PASTE_PLAYLIST_URL_HERE"
 ```
@@ -41,19 +41,19 @@ powershell -ExecutionPolicy Bypass -File .\run_playlist_audio_and_archive.ps1 -P
 Audio files are saved here:
 
 ```text
-C:\Users\Adlee Afif\Downloads\youtube_playlist_audio
+C:\Users\{username}\Downloads\youtube_playlist_audio
 ```
 
 The archive is saved in your Downloads folder with a timestamped name, for example:
 
 ```text
-C:\Users\Adlee Afif\Downloads\youtube_playlist_audio_20260623_143012.rar
+C:\Users\{username}\Downloads\youtube_playlist_audio_20260623_143012.rar
 ```
 
 If WinRAR/RAR is not installed, it will create:
 
 ```text
-C:\Users\Adlee Afif\Downloads\youtube_playlist_audio_20260623_143012.zip
+C:\Users\{username}\Downloads\youtube_playlist_audio_20260623_143012.zip
 ```
 
 ## Useful Options
@@ -90,7 +90,7 @@ python -m pip install -r requirements_youtube_audio.txt
 It also uses a download archive file at:
 
 ```text
-C:\Users\Adlee Afif\Downloads\youtube_playlist_audio\downloaded.txt
+C:\Users\{username}\Downloads\youtube_playlist_audio\downloaded.txt
 ```
 
 That means rerunning the same playlist should skip tracks that already downloaded successfully.
